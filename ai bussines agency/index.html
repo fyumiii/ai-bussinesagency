@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroDigital AI - AI-Powered Digital Marketing Agency</title>
+    <meta name="description" content="Transform your digital marketing with AI intelligence. NeuroDigital AI offers cutting-edge artificial intelligence solutions for businesses of all sizes.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        /* Custom animations and utilities */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        .delay-500 {
+            animation-delay: 500ms;
+        }
+        
+        .delay-1000 {
+            animation-delay: 1000ms;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Backdrop blur fallback */
+        .backdrop-blur-sm {
+            backdrop-filter: blur(4px);
+        }
+        
+        .backdrop-blur-md {
+            backdrop-filter: blur(12px);
+        }
+        
+        /* Gradient text */
+        .bg-clip-text {
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #6366f1;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4f46e5;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="p-2 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg">
+                        <i data-lucide="brain" class="h-6 w-6 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">NeuroDigital AI</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-white transition-colors duration-200 font-medium">Home</a>
+                    <a href="#services" class="text-gray-300 hover:text-white transition-colors duration-200 font-medium">Services</a>
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-200 font-medium">Features</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-200 font-medium">About</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-200 font-medium">Contact</a>
+                    <button class="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-2 rounded-lg font-medium hover:from-purple-700 hover:to-blue-600 transition-all duration-200 flex items-center space-x-2">
+                        <span>Get Started</span>
+                        <i data-lucide="chevron-right" class="h-4 w-4"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white p-2">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-900/95 backdrop-blur-md rounded-lg mt-2">
+                    <a href="#home" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200">Home</a>
+                    <a href="#services" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200">Services</a>
+                    <a href="#features" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200">Features</a>
+                    <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200">About</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors duration-200">Contact</a>
+                    <button class="w-full mt-4 bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-2 rounded-lg font-medium">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-purple-900/20 to-blue-900/20"></div>
+        
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl animate-pulse delay-500"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Badge -->
+            <div class="inline-flex items-center space-x-2 bg-gray-800/50 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-purple-500/20">
+                <i data-lucide="sparkles" class="h-4 w-4 text-purple-400"></i>
+                <span class="text-sm text-gray-300">AI-Powered Marketing Revolution</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                <span class="block">Transform Your</span>
+                <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                    Digital Marketing
+                </span>
+                <span class="block">with AI Intelligence</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class=" hero-title md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                NeuroDigital AI memanfaatkan kecerdasan buatan terkini untuk merevolusi strategi pemasaran Anda, memberikan hasil luar biasa untuk bisnis dari berbagai ukuran.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+                <button class="group bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-purple-700 hover:to-blue-600 transition-all duration-300 flex items-center space-x-2 transform hover:scale-105">
+                    <span>Start Your AI Journey</span>
+                    <i data-lucide="arrow-right" class="h-5 w-5 group-hover:translate-x-1 transition-transform duration-200"></i>
+                </button>
+                <button class="border border-gray-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all duration-300">
+                    Watch Demo
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+                <div class="text-center">
+                    <div class="flex items-center justify-center mb-2">
+                        <i data-lucide="trending-up" class="h-6 w-6 text-green-400 mr-2"></i>
+                        <span class="text-3xl font-bold text-white">300%</span>
+                    </div>
+                    <p class="text-gray-400">Peningkatan ROI Rata-rata</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center mb-2">
+                        <i data-lucide="zap" class="h-6 w-6 text-yellow-400 mr-2"></i>
+                        <span class="text-3xl font-bold text-white">10x</span>
+                    </div>
+                    <p class="text-gray-400">Optimasi Kampanye Lebih Cepat</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center mb-2">
+                        <i data-lucide="sparkles" class="h-6 w-6 text-purple-400 mr-2"></i>
+                        <span class="text-3xl font-bold text-white">500+</span>
+                    </div>
+                    <p class="text-gray-400">Kampanye Sukses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    AI-Powered Marketing
+                    <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"> Solutions</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Manfaatkan kekuatan kecerdasan buatan untuk mengubah upaya pemasaran Anda dan mencapai hasil yang belum pernah terjadi sebelumnya.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="mb-6">
+                        <div class="inline-flex p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="brain" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        AI-Powered Strategy
+                    </h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Algoritma pembelajaran mesin yang canggih menganalisis tren pasar dan perilaku konsumen untuk membuat strategi pemasaran berbasis data.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Predictive Analytics
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Market Intelligence
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Automated Insights
+                        </li>
+                    </ul>
+                    <button class="group/btn flex items-center text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="mb-6">
+                        <div class="inline-flex p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="target" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Precision Targeting
+                    </h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Manfaatkan AI untuk mengidentifikasi dan menargetkan pelanggan ideal Anda dengan akurasi dan efisiensi yang belum pernah ada sebelumnya.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Audience Segmentation
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Behavioral Analysis
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Dynamic Personalization
+                        </li>
+                    </ul>
+                    <button class="group/btn flex items-center text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="mb-6">
+                        <div class="inline-flex p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="bar-chart-3" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Performance Analytics
+                    </h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Analisis berbasis AI secara real-time memberikan wawasan mendalam tentang performa kampanye dan peluang pengoptimalan.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Real-time Reporting
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            ROI Optimization
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Conversion Tracking
+                        </li>
+                    </ul>
+                    <button class="group/btn flex items-center text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="mb-6">
+                        <div class="inline-flex p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="message-square" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Content Intelligence
+                    </h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Konten buatan AI yang sesuai dengan audiens Anda dan mendorong keterlibatan di semua platform.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Content Generation
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            A/B Testing
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Engagement Optimization
+                        </li>
+                    </ul>
+                    <button class="group/btn flex items-center text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="mb-6">
+                        <div class="inline-flex p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="search" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        SEO Automation
+                    </h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Strategi SEO otomatis didukung oleh AI untuk meningkatkan peringkat pencarian dan visibilitas organik Anda.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Keyword Optimization
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Technical SEO
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Ranking Monitoring
+                        </li>
+                    </ul>
+                    <button class="group/btn flex items-center text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200"></i>
+                    </button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="group bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                    <div class="mb-6">
+                        <div class="inline-flex p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="smartphone" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Omnichannel Marketing
+                    </h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Integrasikan semua saluran pemasaran secara mulus dengan manajemen dan pengoptimalan kampanye bertenaga AI.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Multi-platform Sync
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Channel Optimization
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+                            Unified Analytics
+                        </li>
+                    </ul>
+                    <button class="group/btn flex items-center text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right" class="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform duration-200"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #8B5CF6 0%, transparent 70%), radial-gradient(circle at 75% 75%, #3B82F6 0%, transparent 70%)"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Why Choose
+                    <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"> NeuroDigital AI?</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Rasakan pemasaran digital generasi berikutnya dengan platform AI canggih kami yang dibuat untuk bisnis modern.
+                </p>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
+                        99.9%
+                    </div>
+                    <div class="text-gray-400 text-sm md:text-base">Uptime Guarantee</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
+                        50ms
+                    </div>
+                    <div class="text-gray-400 text-sm md:text-base">Response Time</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
+                        24/7
+                    </div>
+                    <div class="text-gray-400 text-sm md:text-base">Support Available</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2">
+                        200+
+                    </div>
+                    <div class="text-gray-400 text-sm md:text-base">Integrations</div>
+                </div>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="group bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/30 hover:border-purple-500/50 transition-all duration-300 hover:bg-gray-800/50">
+                    <div class="mb-6">
+                        <div class="inline-flex p-4 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="zap" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Lightning Fast
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        AI kami memproses data dengan kecepatan luar biasa, memberikan wawasan dan pengoptimalan waktu nyata untuk kampanye Anda.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="group bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/30 hover:border-purple-500/50 transition-all duration-300 hover:bg-gray-800/50">
+                    <div class="mb-6">
+                        <div class="inline-flex p-4 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="shield-check" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Enterprise Security
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Protokol keamanan tingkat bank melindungi data Anda dengan enkripsi menyeluruh dan standar kepatuhan.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="group bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/30 hover:border-purple-500/50 transition-all duration-300 hover:bg-gray-800/50">
+                    <div class="mb-6">
+                        <div class="inline-flex p-4 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="trending-up" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Scalable Growth
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Dari perusahaan rintisan hingga perusahaan besar, platform kami dapat disesuaikan secara mulus dengan pertumbuhan dan kebutuhan bisnis Anda.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="group bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/30 hover:border-purple-500/50 transition-all duration-300 hover:bg-gray-800/50">
+                    <div class="mb-6">
+                        <div class="inline-flex p-4 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="settings" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Easy Integration
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Terhubung dengan 200+ alat dan platform pemasaran melalui ekosistem API dan plugin kami yang komprehensif.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="group bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/30 hover:border-purple-500/50 transition-all duration-300 hover:bg-gray-800/50">
+                    <div class="mb-6">
+                        <div class="inline-flex p-4 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="headphones" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Expert Support
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Dapatkan dukungan 24/7 dari tim ahli pemasaran AI dan manajer akun khusus kami.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="group bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/30 hover:border-purple-500/50 transition-all duration-300 hover:bg-gray-800/50">
+                    <div class="mb-6">
+                        <div class="inline-flex p-4 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg group-hover:from-purple-600/30 group-hover:to-blue-500/30 transition-all duration-300">
+                            <i data-lucide="globe" class="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors duration-300"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                        Global Reach
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Perluas pemasaran Anda di seluruh pasar global dengan dukungan multibahasa dan pengoptimalan regional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Content -->
+                <div>
+                    <div class="inline-flex items-center space-x-2 bg-gray-800/50 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-purple-500/20">
+                        <i data-lucide="users" class="h-4 w-4 text-purple-400"></i>
+                        <span class="text-sm text-gray-300">About NeuroDigital AI</span>
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                        Pioneering the Future of
+                        <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                            AI Marketing
+                        </span>
+                    </h2>
+
+                    <p class=" hero-title text-gray-300 mb-8 leading-relaxed">
+                        Didirikan pada tahun 2023, NeuroDigital AI telah dengan cepat menjadi pemimpin dalam solusi pemasaran yang didukung kecerdasan buatan. Tim ilmuwan data, pakar pemasaran, dan teknisi AI kami bekerja sama untuk menciptakan solusi inovatif yang mengubah cara bisnis terhubung dengan audiens mereka.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg">
+                                <i data-lucide="award" class="h-6 w-6 text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-2">Award-Winning Technology</h4>
+                                <p class="text-gray-400">Recognized by industry leaders for innovation and excellence.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg">
+                                <i data-lucide="users" class="h-6 w-6 text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-2">Expert Team</h4>
+                                <p class="text-gray-400">50+ AI specialists and marketing professionals at your service.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg">
+                                <i data-lucide="rocket" class="h-6 w-6 text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-2">Cutting-Edge Innovation</h4>
+                                <p class="text-gray-400">Constantly evolving with the latest AI advancements.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-2 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg">
+                                <i data-lucide="heart" class="h-6 w-6 text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-2">Client-Focused</h4>
+                                <p class="text-gray-400">Your success is our primary mission and driving force.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="group bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-600 transition-all duration-300 flex items-center space-x-2 transform hover:scale-105">
+                        <span>Learn More About Us</span>
+                        <i data-lucide="arrow-right" class="h-5 w-5 group-hover:translate-x-1 transition-transform duration-200"></i>
+                    </button>
+                </div>
+
+                <!-- Visual Element -->
+                <div class="relative">
+                    <div class="relative bg-gradient-to-br from-purple-600/20 to-blue-500/20 rounded-2xl p-8 backdrop-blur-sm border border-gray-700/50">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center p-6 bg-gray-800/50 rounded-xl">
+                                <div class="text-3xl font-bold text-purple-400 mb-2">1000+</div>
+                                <div class="text-gray-300 text-sm">Happy Clients</div>
+                            </div>
+                            <div class="text-center p-6 bg-gray-800/50 rounded-xl">
+                                <div class="text-3xl font-bold text-blue-400 mb-2">98%</div>
+                                <div class="text-gray-300 text-sm">Client Retention</div>
+                            </div>
+                            <div class="text-center p-6 bg-gray-800/50 rounded-xl">
+                                <div class="text-3xl font-bold text-green-400 mb-2">24/7</div>
+                                <div class="text-gray-300 text-sm">AI Monitoring</div>
+                            </div>
+                            <div class="text-center p-6 bg-gray-800/50 rounded-xl">
+                                <div class="text-3xl font-bold text-yellow-400 mb-2">15min</div>
+                                <div class="text-gray-300 text-sm">Setup Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 75% 25%, #8B5CF6 0%, transparent 70%), radial-gradient(circle at 25% 75%, #3B82F6 0%, transparent 70%)"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Ready to Transform Your
+                    <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"> Marketing?</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Get started with NeuroDigital AI today and experience the power of artificial intelligence in your marketing campaigns.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Contact Form -->
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+                    <h3 class="text-2xl font-bold text-white mb-6">Get Your Free AI Marketing Audit</h3>
+                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-200" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-200" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                            <input type="email" class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-200" placeholder="john@company.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Company</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-200" placeholder="Your Company">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Monthly Marketing Budget</label>
+                            <select class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-purple-500 transition-colors duration-200">
+                                <option>Select budget range</option>
+                                <option>$1,000 - $5,000</option>
+                                <option>$5,000 - $15,000</option>
+                                <option>$15,000 - $50,000</option>
+                                <option>$50,000+</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Tell us about your goals</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 transition-colors duration-200" placeholder="Describe your marketing challenges and goals..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-purple-700 hover:to-blue-600 transition-all duration-300 flex items-center justify-center space-x-2 transform hover:scale-105">
+                            <span>Get Free Audit</span>
+                            <i data-lucide="send" class="h-5 w-5"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg">
+                                <i data-lucide="mail" class="h-6 w-6 text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-2">Email Us</h4>
+                                <p class="text-gray-400">hello@neurodigitalai.com</p>
+                                <p class="text-gray-400">support@neurodigitalai.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg">
+                                <i data-lucide="phone" class="h-6 w-6 text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-2">Call Us</h4>
+                                <p class="text-gray-400">+1 (555) 123-4567</p>
+                                <p class="text-gray-400 text-sm">Mon-Fri, 9AM-6PM EST</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 p-3 bg-gradient-to-r from-purple-600/20 to-blue-500/20 rounded-lg">
+                                <i data-lucide="map-pin" class="h-6 w-6 text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-2">Visit Us</h4>
+                                <p class="text-gray-400">123 AI Innovation Drive</p>
+                                <p class="text-gray-400">San Francisco, CA 94102</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/30">
+                        <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="p-3 bg-gray-700/50 rounded-lg hover:bg-purple-600/20 transition-colors duration-200">
+                                <i data-lucide="linkedin" class="h-5 w-5 text-gray-400 hover:text-purple-400"></i>
+                            </a>
+                            <a href="#" class="p-3 bg-gray-700/50 rounded-lg hover:bg-purple-600/20 transition-colors duration-200">
+                                <i data-lucide="twitter" class="h-5 w-5 text-gray-400 hover:text-purple-400"></i>
+                            </a>
+                            <a href="#" class="p-3 bg-gray-700/50 rounded-lg hover:bg-purple-600/20 transition-colors duration-200">
+                                <i data-lucide="facebook" class="h-5 w-5 text-gray-400 hover:text-purple-400"></i>
+                            </a>
+                            <a href="#" class="p-3 bg-gray-700/50 rounded-lg hover:bg-purple-600/20 transition-colors duration-200">
+                                <i data-lucide="instagram" class="h-5 w-5 text-gray-400 hover:text-purple-400"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="p-2 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg">
+                            <i data-lucide="brain" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">NeuroDigital AI</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Transforming digital marketing through artificial intelligence. Join thousands of businesses already experiencing the future of marketing.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-200">
+                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-200">
+                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-200">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-200">
+                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">AI Strategy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Precision Targeting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Performance Analytics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Content Intelligence</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">SEO Automation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Omnichannel Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 NeuroDigital AI. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Header background on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('bg-gray-900/95', 'backdrop-blur-md', 'shadow-lg');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-gray-900/95', 'backdrop-blur-md', 'shadow-lg');
+                header.classList.add('bg-transparent');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animations
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+// Typing effect for hero title
+        const heroTitle = document.querySelector('.hero-title');
+        if (heroTitle) {
+            const text = heroTitle.textContent;
+            heroTitle.textContent = '';
+            let i = 0;
+            
+            const typeWriter = () => {
+                if (i < text.length) {
+                    heroTitle.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                } else {
+                    // Add cursor blinking effect after typing is complete
+                    heroTitle.classList.add('typing-complete');
+                }
+            };
+            
+            setTimeout(typeWriter, 1000);
+        }
+
+        // Counter animation for stats
+        const animateCounter = (element, target) => {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + (element.dataset.suffix || '');
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + (element.dataset.suffix || '');
+                }
+            }, 20);
+        };
+
+        // Observe stats section for counter animation
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('[data-count]');
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.dataset.count);
+                        animateCounter(counter, target);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const homeSection = document.querySelector('#home');
+if (homeSection) {
+    statsObserver.observe(homeSection);
+}
+
+
+        // Form submission handling
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                const formObject = Object.fromEntries(formData);
+                
+                // Simple validation
+                const requiredFields = ['firstName', 'lastName', 'email', 'company'];
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    const input = contactForm.querySelector(`[name="${field}"]`);
+                    if (!input || !input.value.trim()) {
+                        isValid = false;
+                        if (input) {
+                            input.classList.add('border-red-500');
+                            setTimeout(() => input.classList.remove('border-red-500'), 3000);
+                        }
+                    }
+                });
+                
+                if (isValid) {
+                    // Show success message
+                    const button = contactForm.querySelector('button[type="submit"]');
+                    const originalText = button.innerHTML;
+                    button.innerHTML = '<span>Submitted Successfully!</span><i data-lucide="check" class="h-5 w-5"></i>';
+                    button.classList.add('bg-green-600');
+                    
+                    // Reset form after delay
+                    setTimeout(() => {
+                        contactForm.reset();
+                        button.innerHTML = originalText;
+                        button.classList.remove('bg-green-600');
+                        lucide.createIcons();
+                    }, 2000);
+                } else {
+                    // Show error message
+                    const button = contactForm.querySelector('button[type="submit"]');
+                    const originalText = button.innerHTML;
+                    button.innerHTML = '<span>Please fill required fields</span><i data-lucide="alert-circle" class="h-5 w-5"></i>';
+                    button.classList.add('bg-red-600');
+                    
+                    setTimeout(() => {
+                        button.innerHTML = originalText;
+                        button.classList.remove('bg-red-600');
+                        lucide.createIcons();
+                    }, 2000);
+                }
+                
+                lucide.createIcons();
+            });
+        }
+
+        // Parallax effect for background elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            
+            document.querySelectorAll('.parallax-bg').forEach(element => {
+                element.style.transform = `translateY(${rate}px)`;
+            });
+        });
+
+        // Loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
+    <!-- Add custom CSS for animations -->
+    <style>
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .loaded {
+            opacity: 1;
+        }
+        
+        body {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .parallax-bg {
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Typing cursor effect */
+        .hero-title::after {
+            content: '|';
+            animation: blink 1s infinite;
+            opacity: 1;
+        }
+        
+        .hero-title.typing-complete::after {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</body>
+</html>
